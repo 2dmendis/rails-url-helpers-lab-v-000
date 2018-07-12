@@ -6,15 +6,15 @@ class StudentsController < ApplicationController
   end
 
   def show
-    
+
     @student = Student.find_by(params[:id])
 
   end
 
-  def active 
+  def active
     @student = Student.find_by(params[:id])
-    
-  end 
+    @student = @student.toggleActive
+  end
 
   private
 
