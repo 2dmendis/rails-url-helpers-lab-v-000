@@ -3,7 +3,7 @@
 <div> <%if @student.active == false%>
 <p>This student is currently inactive.</p>
 <% else%>
-<p>This student is active.</p>
+<p>This student is currently active.</p>
 <% end%>
 </div>
 <div><%= link_to @student.active, student_path(@student) %></div>
