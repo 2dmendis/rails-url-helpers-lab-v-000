@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
   def activate
     @student = Student.find_by(params[:id])
     @student = @student.toggleActive
-    render 'students/show.html.erb'
+    redirect_to 'student'
   end
 
   private
