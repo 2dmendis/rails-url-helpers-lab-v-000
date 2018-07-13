@@ -3,7 +3,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def toggleActive
+  def toggle_active
     if self.active == false
       self.active = true
       self.save

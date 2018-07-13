@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
     @student = Student.find_by(params[:id])
     
     @student = @student.toggleActive
-    redirect_to student_path(@student)     
+    redirect_to student_path(@student)
   end
 
   private
