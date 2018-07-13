@@ -17,8 +17,8 @@ class StudentsController < ApplicationController
 
     @student = @student.toggle_active
     binding.pry
-    # redirect_to student_path(@student)
-    redirect_to "/students/#{@student.id}"
+    redirect_to student_path(@student)
+    # redirect_to "/students/#{@student.id}"
 
   end
 
