@@ -10,6 +10,6 @@ class CreateStudents < ActiveRecord::Migration
     # change_table :students do |t|
     # t.boolean :active, :default => false
     # end
-    add_column :students, :active, :boolean
+    # add_column :students, :active, :boolean
   end
 end
