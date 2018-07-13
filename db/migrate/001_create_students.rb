@@ -4,11 +4,10 @@ class CreateStudents < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
 
-      change_table :students do |t|
-      t.boolean :active, :default => false
-      end
-
       t.timestamps null: false
+    end
+    change_table :students do |t|
+    t.boolean :active, :default => false
     end
   end
 end
