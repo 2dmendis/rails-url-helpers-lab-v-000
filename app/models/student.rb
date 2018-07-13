@@ -6,8 +6,10 @@ class Student < ActiveRecord::Base
   def toggleActive
     if self.active == false
       self.active = true
+      self.save
     else
       self.active = false
+      self.save
     end 
   end
 end
