@@ -10,6 +10,6 @@ class Student < ActiveRecord::Base
     else
       self.active = false
       self.save
-    end 
+    end
   end
 end

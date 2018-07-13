@@ -13,8 +13,8 @@ class StudentsController < ApplicationController
 
   def activate
     @student = Student.find_by(params[:id])
-    
-    @student = @student.toggleActive
+
+    @student = @student.toggle_active
     redirect_to student_path(@student)
   end
 
