@@ -12,11 +12,13 @@ class StudentsController < ApplicationController
   end
 
   def activate
+
     @student = Student.find_by(params[:id])
 
     @student = @student.toggle_active
     # redirect_to student_path(@student)
     redirect_to "/students/#{@student.id}"
+  binding.pry
   end
 
   private
